@@ -12,8 +12,8 @@
 		<property name="level" />
 		<!-- 映射包含的商品集合 -->
 		<set name="products" inverse="true" lazy="extra">
-			<key column="categoryId">
-				<one-to-many class="ProductInfo">
+			<key column="categoryId"/>
+				<one-to-many class="ProductInfo"/>
 		</set>
 		<!-- 映射父节点 -->
 		<many-to-one name="parent" column="pid"/>

@@ -3,10 +3,10 @@
 	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
 
-<hibernate-mapping pachage="model.product">
+<hibernate-mapping package="model.product">
 	<class name="UploadFile" table="tb_uploadFile">
 		<id name="id">
-			<generator calss="native">
+			<generator class="native"/>
 		</id>
 		
 		<property name="path" not-null="true"/>
