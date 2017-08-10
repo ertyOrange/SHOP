@@ -15,7 +15,7 @@
 		<!-- 打印sql语句 -->
 		<property name="hibernate.show_sql">true</property>
 		<!-- 自动生成表 -->
-		<property name="hibernate.hbm2ddl.auto">udpate</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
 		<!-- 不格式化SQL语句 -->
 		<property name="hibernate.format_sql">true</property>
 		<!-- 为Session指定一个自定义策略 -->
