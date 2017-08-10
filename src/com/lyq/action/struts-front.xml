@@ -4,5 +4,17 @@
 	"http://struts.apache.org/dtds/struts-2.1.dtd" >
 <struts>
 	<package name="shop.front" extends="shop_default">
+	<!-- config_filter -->
+	<interceptors>
+		<!-- 验证用户的登录拦截器 -->	
+		<interceptor name="loginIntercepter" class="com.lyq.action.interceptor.CustomerLoginInteceptor"/>
+		<interceptor-stack name="customerDefaultStack">
+			<interceptor-ref name="loginInterceptor"/>
+			<interceptor-ref name="defaultStack"/>
+		</interceptor-stack>
+	</interceptors>
+	<action name="index" class="indexAction">
+		<result>/WEB-INF/pages/index.jsp</result>
+	</action>
 	</package>
 </struts>
